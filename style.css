@@ -1,0 +1,51 @@
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+body {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper {
+    width: 400px;
+    height: 150px;
+    background-color: lightyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#body {
+    height: 45px;
+    width: 100px;
+    border-radius: 45px;
+    border: 2px solid grey;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 2px;
+}
+#dot {
+    width: 39px;
+    height: 39px;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+#wrapper .active {
+    background-color: #5bda4d;
+    transition: all 0.2s linear;
+}
+#wrapper .move {
+    transform: translate(54px);
+    transition: transform 0.2s ease-out;
+    background-image: url('power.png');
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
